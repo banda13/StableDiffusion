@@ -1,13 +1,9 @@
 import torch
 from PIL import Image
 from tqdm.auto import tqdm
-from diffusers import DDPMPipeline
 from transformers import CLIPTextModel, CLIPTokenizer
 from diffusers import AutoencoderKL, UNet2DConditionModel, PNDMScheduler
 
-ddpm = DDPMPipeline.from_pretrained("google/ddpm-cat-256").to("cuda")
-# image = ddpm(num_inference_steps=50).images[0]
-# image.show()
 
 vae = AutoencoderKL.from_pretrained("CompVis/stable-diffusion-v1-4", subfolder="vae")
 tokenizer = CLIPTokenizer.from_pretrained("CompVis/stable-diffusion-v1-4", subfolder="tokenizer")
