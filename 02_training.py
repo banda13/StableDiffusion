@@ -1,8 +1,8 @@
 import os
 import math
 import torch
+from PIL import Image
 from pathlib import Path
-from torchvision.datapoints import Image
 from tqdm.auto import tqdm
 from accelerate import Accelerator
 from dataclasses import dataclass
