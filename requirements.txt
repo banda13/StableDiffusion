@@ -4,3 +4,4 @@ torchaudio --index-url https://download.pytorch.org/whl/cu118
 diffusers
 accelerate
 transformers
+tensorflow==2.10.1
